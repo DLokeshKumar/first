@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('clone'){
+            steps{
+   git credentialsId: 'git_creds', url: 'https://github.com/DLokeshKumar/first.git'
+}
+}
+}
+}
